@@ -1,7 +1,7 @@
 # Principal Component Analysis for Image Dimensionality Reduction
 
 ## Overview
-This project implements Principal Component Analysis (PCA) from scratch for dimensionality reduction on handwritten digit images. The work was completed as part of the Introduction to Robotics course (CSE543) at North South University, Spring 2023.
+This project implements Principal Component Analysis (PCA) from scratch for dimensionality reduction on handwritten digit images. 
 
 ## Dataset
 The project uses the Digits dataset from scikit-learn, which contains 1,797 grayscale images of handwritten digits (0-9), each of size 8x8 pixels. Each image is represented as a vector of 64 pixel values.
@@ -34,8 +34,4 @@ The PCA pipeline was implemented manually using the following steps:
 ## Results
 The number of principal components required to preserve 99% of the variance was identified and used to reconstruct digit images with minimal loss of visual information. The reduced-dimension images were plotted alongside the originals to demonstrate the effectiveness of PCA for image compression and dimensionality reduction.
 
-## Course Information
-- **Course:** CSE543 Introduction to Robotics
-- **Institution:** North South University, Bangladesh
-- **Semester:** Spring 2023
-- **Instructor:** Dr. Tahsina Farah Sanam
+
