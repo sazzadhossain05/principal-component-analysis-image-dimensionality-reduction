@@ -35,7 +35,7 @@ The PCA pipeline was implemented manually using the following steps:
 ## Results
 **Result:** 41 of the 64 components keep 99% of the variance.
 
-The report in `solution/` is the version submitted in 2023; the notebook's variance calculation was corrected in 2026.
+The report in `solution/` was submitted in Spring 2023 together with this notebook. In 2026, one line of the notebook was corrected.
 
 The number of principal components required to preserve 99% of the variance was identified and used to reconstruct digit images with minimal loss of visual information. The reduced-dimension images were plotted alongside the originals to demonstrate the effectiveness of PCA for image compression and dimensionality reduction.
 
