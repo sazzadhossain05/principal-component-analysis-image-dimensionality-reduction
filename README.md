@@ -1,6 +1,8 @@
 # Principal Component Analysis for Image Dimensionality Reduction
 
 ## Overview
+Bonus assignment for CSE543 Introduction to Robotics, North South University, Spring 2023.
+
 This project implements Principal Component Analysis (PCA) from scratch for dimensionality reduction on handwritten digit images. 
 
 ## Dataset
@@ -25,9 +27,8 @@ The PCA pipeline was implemented manually using the following steps:
 - Jupyter Notebook
 
 ## Files
-- `plot_digits_last_image.ipynb` — main Jupyter notebook with full PCA implementation and visualizations
-- `plot_digits_last_image.py` — Python script version of the implementation
-- `bonus assignment/Untitled.ipynb` — working notebook used during development
+- `bonus assignment/Untitled.ipynb` — main notebook with the PCA implementation (centering, covariance matrix, SVD, choosing r for 99% variance) and plots
+- `plot_digits_last_image.ipynb`, `plot_digits_last_image.py` — scikit-learn example used to load and display a digit image
 - `solution/` — final submitted report in PDF and DOCX formats
 - `Bonus Assignment.pdf` — original assignment question provided by the instructor
 
