@@ -16,7 +16,7 @@ The PCA pipeline was implemented manually using the following steps:
 3. **Covariance Matrix Computation** — computed the covariance matrix of the transposed image matrix to capture feature-level variance.
 4. **Singular Value Decomposition (SVD)** — applied SVD to the covariance matrix to obtain the eigenvector matrix U, representing the principal components.
 5. **Dimensionality Reduction** — selected the top r eigenvectors such that 99% of the total variance is preserved, and projected the original data onto the reduced space.
-6. **Reconstruction and Visualization** — reconstructed and plotted digit images in the reduced dimension space to verify the quality of the approximation.
+6. **Reconstruction and Visualization** — rebuilt the digit images from the top r components and plotted a reconstructed digit next to the original; also plotted the data on the first two principal components.
 
 ## Tools and Libraries
 - Python 3
@@ -27,7 +27,8 @@ The PCA pipeline was implemented manually using the following steps:
 - Jupyter Notebook
 
 ## Files
-- `bonus assignment/Untitled.ipynb` — main notebook with the PCA implementation (centering, covariance matrix, SVD, choosing r for 99% variance) and plots
+- `bonus assignment/pca_digits.ipynb` — main notebook with the PCA implementation (centering, covariance matrix, SVD, choosing r for 99% variance, reconstruction) and plots
+- `bonus assignment/reconstruction.png` — original and reconstructed digit
 - `plot_digits_last_image.ipynb`, `plot_digits_last_image.py` — scikit-learn example used to load and display a digit image
 - `solution/` — final submitted report in PDF and DOCX formats
 - `Bonus Assignment.pdf` — original assignment question provided by the instructor
@@ -35,8 +36,10 @@ The PCA pipeline was implemented manually using the following steps:
 ## Results
 **Result:** 41 of the 64 components keep 99% of the variance.
 
-The report in `solution/` was submitted in Spring 2023 together with this notebook. In 2026, one line of the notebook was corrected.
+The report in `solution/` was submitted in Spring 2023 together with this notebook. The notebook was updated in 2026.
 
-The number of principal components required to preserve 99% of the variance was identified and used to reconstruct digit images with minimal loss of visual information. The reduced-dimension images were plotted alongside the originals to demonstrate the effectiveness of PCA for image compression and dimensionality reduction.
+The number of principal components required to preserve 99% of the variance was identified and used to reconstruct the digit images (relative reconstruction error about 5.6%). A reconstructed digit is shown next to the original:
+
+![Original and reconstructed digit](bonus%20assignment/reconstruction.png)
 
 
